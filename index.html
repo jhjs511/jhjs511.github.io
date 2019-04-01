@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div{
+        width:40%;
+        margin: auto
+    }
+    select{
+        border-style:none;
+    }
+    </style>
+</head>
+<body>
+    <h2>SEARCH</h2><br>
+    <form>
+    <div>
+        <!-- 데이터베이스와input 연결은 'list'와 'id'로 -->
+        <input type="search" list="ser" name="list">
+        <datalist id="ser">
+            <option >하늘</option>
+            <option >숲</option>
+            <option >강</option>
+        </datalist>
+        <button type="submit" value="SEARCH">SEARCH</button>
+    </div><br>
+        <select name="a" id="a">
+            <option value="1">이름순</option>
+            <option value="2">아이디순</option>
+        </select>
+        <select name="b" id="b">
+            <option value="3">평점순</option>
+            <option value="4">추천순</option>
+        </select>
+        <select name="c" id="c">
+            <option value="5">공유순</option>
+            <option value="6">추천순</option>
+        </select>
+    </form>
+    <table style="text-align: center">
+        <tr>
+            <th>사진</th>
+            <th>이름 및 위치</th>
+            <th>평점 및 공유</th>
+        </tr>
+        <tr>
+            <td><img src="im/ima1.jpg" width="400" alt="?"></td>
+            <td>
+                <h3>지구의 보물</h3><br>
+                <b>지구어딘가 &gt; 좋은곳</b><br>
+                장소 설명이 들어가는 곳입니다. 되도록 상세하게 작성합니다.
+            </td>
+            <td><p>평점 : ★★★★☆</p><br>
+                <input type="button" value="공유하기"><br><br>
+                <input type="button" value="추천하기하기">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="im/ima2.jpg" width="400" alt="?"></td>
+            <td>
+                <h3>지구의 보물</h3><br>
+                <b>지구어딘가 &gt; 좋은곳</b><br>
+                장소 설명이 들어가는 곳입니다. 되도록 상세하게 작성합니다.
+            </td>
+            <td><p>평점 : ★★★★☆</p><br>
+                <input type="button" value="공유하기"><br><br>
+                <input type="button" value="추천하기하기">
+            </td>
+        </tr>
+        <tr>
+            <td><img src="im/ima3.jpg" width="400" alt="?"></td>
+            <td>
+                <h3>지구의 보물</h3><br>
+                <b>지구어딘가 &gt; 좋은곳</b><br>
+                장소 설명이 들어가는 곳입니다. 되도록 상세하게 작성합니다.
+            </td>
+            <td><p>평점 : ★★★★☆</p><br>
+                <input type="button" value="공유하기"><br><br>
+                <input type="button" value="추천하기하기">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
