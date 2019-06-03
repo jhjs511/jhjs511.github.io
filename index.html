@@ -13,7 +13,7 @@
             @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
             .wrapper{
                 background-color: #ededed;
-                width: 90vw;        
+                width: 100;        
                 margin: 0 auto;                 
             }
             header{
@@ -179,7 +179,7 @@
                margin: auto;
                border: 1px solid red;
                background-color: white;
-               margin-top: 600px;    
+               margin-top: 50px;    
            }
             @media (max-width:1680px){
                 .popup{
@@ -232,13 +232,88 @@
                     background-position: right;
                 }
             }
-            /* @media (max-width:900px){
-                .popup{
-                    margin-top: 600px;
+            @media (max-width:890px){
+                header{
+                    width: 100%;
                 }
-            } */
-           
-           
+                .pjh{
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+                nav>ul{
+                    background-color: rgba(0,0,0,0.2);
+                }
+                nav>ul>li{
+                    margin: 10px;
+                    padding-left: 30px;
+                    width: 100%;
+                }
+                nav a{
+                display: block;
+                }
+            }
+            .spinner-master4 * {
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                box-sizing: border-box;
+            }
+            .spinner-master4 {
+                position: relative;
+                margin: 0 auto;
+                height: 50px;
+                width: 50px;
+            }
+            .spinner-master4 input[type=checkbox] {
+                display: none;
+            }
+            .spinner-master4 label {
+                cursor: pointer;
+                position: absolute;
+                z-index: 99;
+                height: 100%;
+                width: 100%;
+                top: 10px;
+                left: 0;
+            }
+            .spinner-master4 .spinner4 {
+                position: absolute;
+                height: 5px;
+                width: 100%;
+                background-color: #333;
+                box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+            }
+            .spinner-master4 .diagonal.part-1 {
+                position: relative;
+                float: left;
+            }
+            .spinner-master4 .horizontal {
+                position: relative;
+                float: left;
+                margin-top: 6px;
+            }
+            .spinner-master4 .diagonal.part-2 {
+                position: relative;
+                float: left;
+                margin-top: 6px;
+            }
+            .spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {
+                transform: translate(-100px, 0px);
+                opacity: 0;
+            }
+            .spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {
+                transform: rotate(-135deg);
+                margin-top: 10px;
+            }
+            .spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                margin-top: -16px;
+            }
+            @media (min-width:889px){
+                .spinner-master4{
+                    display: none;
+                }
+            }
 
         </style>
     </head>
@@ -247,7 +322,15 @@
             <header>
                 <div></div>
                     <img src="images/PJH정사각.png" alt=""  class="pjh" width="87px" height="87px">
-                
+                            <div class="spinner-master4">
+                                <input type="checkbox" id="spinner-form4" />
+                                <label for="spinner-form4" class="spinner-spin4">
+                                <div class="spinner4 diagonal part-1"></div>
+                                <div class="spinner4 horizontal"></div>
+                                <div class="spinner4 diagonal part-2"></div>
+                                </label>
+                            </div> 
+                                               
                     <nav>
                         <ul>
                             <li><a href="#home">HOME</a></li>
