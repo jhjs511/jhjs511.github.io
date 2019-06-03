@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+            .wrapper{
+                background-color: #ededed;
+                width: 90vw;        
+                margin: 0 auto;                 
+            }
+            header{
+                width: 74.573%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Lato', sans-serif;
+                font-size: 31px;
+            }
+            
+            .pjh{
+                padding-top: 11px;
+                display: block;
+            }
+            nav ul{
+                padding: 0px;
+                margin: 0px;
+                padding-top: 67px;                
+                padding-bottom: 22px;         
+            }
+            nav li{
+                display: inline-block; 
+                margin-right: 40px;   
+            }
+            a{
+                text-decoration: none;
+                color: #282828; 
+            }
+            li:last-child{
+                margin-right: 0px;
+            }
+            .banner{
+                height: 50vh;
+                background-image: url("images/Untitled-1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+            }
+            .about{
+                width: 74.573%;
+                margin: 0 auto;
+            }
+            section>p{
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                font-size: 60px;
+                margin: 0px;
+                padding: 0px;
+            }
+            .menuposition{
+                padding-top: 50px;
+            }
+            .about p:nth-of-type(2){
+                font-size: 30px;
+                font-family: 'Nanum Gothic', sans-serif;
+            }
+            .fontcolor{
+                color: #7a0a00;
+            }
+            .about>img{
+                margin-left: 148px;
+                margin-bottom: 115px;
+                margin-top: 100px;
+            }
+            .about>ul{
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                bottom: 142px;
+                left: 89px; 
+            }
+            .about>ul>li{
+                font-size: 25px;
+                padding: 8px; 
+            }
+            .portfolio{
+                background-color: #b6b6b6;
+            }
+            .fo{
+                width: 74.573%;
+                margin: 0 auto; 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 138px;
+                padding-bottom: 60px;
+            }
+            .folio{
+                background-color: #1f1f1f;
+                width: 364px;
+                height: 240px;
+                margin-bottom: 40px;
+                position: relative;
+            }
+            .folio img{
+                width: 100%;
+                height: 100%;
+            }
+            .caption{
+                background-color: rgba(0,0,0,0.7);
+                position: absolute;
+                top: 00px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                line-height: 370px;
+                text-align: center;
+                z-index: 99;
+                display: none;
+                font-weight: 800;
+                font-size: 30px;
+                color: #b6b6b6;
+            }
+            .folio:hover .caption{
+                display: block;
+            }
+            .contact{
+                width: 74.573%;
+                margin: auto;
+                text-align: center;
+            }
+            .contact>div{
+                background-color: #d6d6d6;
+                border: 7px solid #2b2b2b;
+                border-radius: 10px;
+                text-align: center;
+                padding-top: 86px;
+                padding-bottom: 86px;
+                padding-left: 106px;
+                padding-right: 106px;
+                display: inline-block;
+                margin-top: 50px;
+                margin-bottom: 72px;
+                font-size: 25px;
+            }
+            footer{
+                background-color: #282828;
+                height: 100px;
+            }
+            footer>p{
+                color: #d6d6d6;
+                font-size: 20px;
+                text-align: center;
+                line-height: 100px;
+            }
+            .modal{
+               background-color: #3d3d3dd0;
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               display: none;  
+               
+           }
+            .popup{
+               width: 74.573%;
+               height: 90%;
+               overflow: scroll;
+               overflow-x: hidden;
+               margin: auto;
+               border: 1px solid red;
+               background-color: white;
+               margin-top: 50px;
+               
+           }
+           
+           
+            @media (max-width:1640px){
+                .fo{
+                    justify-content: space-around; 
+                }
+            }
+            @media (max-width:1590px){
+                .about{
+                    text-align: center;
+                }
+                .about>img{
+                    margin-left: 0px;
+                }
+                .about>ul{
+                    text-align: left;
+                    
+                    margin: 0px;
+                }
+            }
+            @media (max-width:1375px){
+                .about>img{
+                    margin: 0px;
+                }
+                .about>ul{
+                    position: static;
+                    text-align: left;
+                    margin-left: 40px;
+                    margin-bottom: 60px;
+                }
+           }
+           @media (max-width:1100px){
+                header{
+                    flex-direction: column;
+                }
+                nav ul{
+                    padding: 0px;
+                }
+                .fo{
+                    display: block;
+                }
+                .folio{
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+                .banner{
+                    background-position: right;
+                }
+           }
+           
+           
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div></div>
+                    <img src="images/PJH정사각.png" alt=""  class="pjh" width="87px" height="87px">
+                
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+            </header>
+            
+                <div class="banner">
+                    <!-- <img src="images/Untitled-1.jpg" alt="" width="100%"> -->
+                </div>
+            
+            <section class="about">
+                <p id="about" class="menuposition">AB<span class="fontcolor">O</span>UT</p>
+                <p>박진홍</p>
+                <img src="images/이름로고1.jpg" alt="" width="431px;">
+                    <ul>
+                        <li>생년월일 : 1995.05.11</li>
+                        <li>E-Mail : jhjs511@gmail.com</li>
+                        <li>연락처 : 010-4161-4611</li>
+                        <li>주소 : 경기도 성남시 분당구 무지개로144</li>
+                        <li>성격 :</li>
+                    </ul>
+            </section>
+            <section class="portfolio">
+                <p id="portfolio" class="menuposition">PORT<span class="fontcolor">F</span>OLIO</p>
+                <div class="fo">
+                    <div class="folio">
+                        <img src="images/맥1.png" alt="">
+                        <div class="caption">
+                            바로가기
+                        </div>
+                    </div>
+                    <div class="folio">
+
+                    </div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                    <div class="folio"></div>
+                </div>
+            </section>
+            <section class="contact">
+                <p id="contact" class="menuposition">CON<span class="fontcolor">T</span>ACT</p>
+                <div>
+                    <div>Phone : 010-4161-4611<div>
+                    <div>E-Mail : jhjs511@gmail.com</div>
+                </div>
+            </section>
+            <footer>
+                 <p>Copyright 2019. Park JinHong. All rights reserved.</p> 
+            </footer>
+        </div>
+
+        <div class="modal" >
+                <div class="popup">
+                <img src="images/상세페이지1.png" style="position: relative; width: 100%">
+                <div><img src="images/Close-icon-31.png" alt="" class="close" style="margin: 0 auto;display: inline-block; position: fixed; right: 120px; bottom: 80px; width: 100px; cursor: pointer;"></div>
+                </div>
+                </div>
+                <script>
+                $(function(){
+                $('.modal .close').click (function(){
+                $('.modal').fadeOut();
+                });
+                $('.folio').click (function(){
+                $('.modal').fadeIn();
+                });
+                }
+                );
+                </script>
+                
+    </body>
+</html>
